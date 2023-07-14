@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+
+html {
+  font-family: 'Titillium Web', sans-serif;
+
+  background-image: linear-gradient(45deg, #acaaaa, #7c7c7c);
+}
+
+header {
+  padding: 10px;
+  background-color: #000000;
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1080px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo,
+.sociais {
+  width: 25%;
+}
+
+.logo img {
+  cursor: pointer;
+  width: 50px;
+}
+
+.menu {
+  width: 50%;
+}
+
+.menu nav a {
+  color: aliceblue;
+  text-decoration: none;
+  padding-right: 50px;
+  font-size: 18px;
+  position: relative;
+}
+
+.menu nav a::after {
+  content: " ";
+  width: 0px;
+  height: 4px;
+  background-image: linear-gradient(45deg, #FF2500, #FF7100);
+  position: absolute;
+  top: 30px;
+  left: 4px;
+  transition: width 0.5s;
+}
+
+.menu nav a:hover::after {
+  width: 30px;
+}
+
+.sociais button {
+  width: 40px;
+  height: 40px;
+  background-image: linear-gradient(45deg, #FF2500, #FF7100);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.sociais button i {
+  font-size: 30px;
+  color: antiquewhite;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#slider {
+    margin-top: 10px;
+  margin-right: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 11%;
+  width: 70%;
+  max-width: 5000px;
+  height: 40vw;
+  max-height: 200px;
+  position: relative;
+}
+
+#slider img {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 800ms;
+}
+
+#slider img.selected {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+  }
+
+  .sociais,
+  .menu,
+  .logo {
+    display: flex;
+  }
+}
+
+box{
+    margin-top: 10px;
+   margin-bottom: auto;
+   margin-left: auto;
+   align-items: auto;
+    color:rgb(0, 0, 0);
+    background-image: linear-gradient(45deg, #acaaaa, #7c7c7c);
+    width: 100%;
+    height: 100%;
+
+}
+p{
+    margin-left: 100px;
+}
+
